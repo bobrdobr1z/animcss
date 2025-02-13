@@ -1,0 +1,75 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: black; 
+} 
+ 
+header { 
+    background-color: #4b3c2e; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+} 
+ 
+.menu ul { 
+    color: white;
+    list-style-type: none; 
+    padding: 0; 
+} 
+ 
+a {
+    color: white;
+}
+.menu ul h1 {
+    color: white; 
+    display: inline; 
+    margin-right: 15px; 
+} 
+ 
+.menu ul li a { 
+    color: bisque; 
+    text-decoration: none; 
+} 
+ 
+.menu ul li a:hover { 
+    text-decoration: underline; 
+
+} 
+ 
+section { 
+    padding: 20px; 
+    margin: 10px; 
+    background-color: bisque; 
+} 
+ 
+footer { 
+    text-align: center; 
+    padding: 10px; 
+    background-color: #4b3c2e; 
+    color: white; 
+}
+
+.food-image {
+    width: 200px; /* Фиксированная ширина 100 пикселей */
+    height: 200px; /* Фиксированная высота 100 пикселей */
+    object-fit: cover; /* Подгонка изображения к контейнеру */
+    border-radius: 5px; /* Скругленные углы */
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+
+
+ul li {
+    font-weight: bold;   
+}
+
+@media (max-width: 768px) { 
+    .container { 
+        flex-direction: column; /* На узких экранах колонки становятся вертикальными */ 
+    } 
+     
+    .column { 
+        margin: 10px 0; /* Отступы для вертикального расположения */ 
+    } 
+}

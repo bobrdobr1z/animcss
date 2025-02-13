@@ -1,0 +1,83 @@
+body { 
+    height: 1000px; 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+background-color: bisque;
+} 
+ 
+header { 
+    height: 150px; 
+    background-color: burlywood;
+    text-align: center; 
+    padding: 1em 0; 
+    border-radius: 10px; /* Скругление углов */ 
+    padding: 0;
+    margin: 0;
+} 
+ 
+.container { 
+    height: 500px; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px; 
+    background-color: bisque
+} 
+ 
+.column { 
+    height: 1000px; 
+    flex: 1; /* Колонки будут одинаковой ширины */ 
+    margin: 0 10px; /* Отступ между колонками */ 
+    background: linear-gradient(rgb(194, 148, 89), rgb(206, 166, 131)); 
+    border-radius: 5px; 
+    padding: 20px; /* Внутренний отступ */ 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для колонок */ 
+} 
+ 
+.column:first-child { 
+    margin-left: 0; /* Убираем отступ слева для первой колонки */ 
+} 
+ 
+.column:last-child { 
+    margin-right: 0; /* Убираем отступ справа для последней колонки */ 
+} 
+ 
+article { 
+    margin-bottom: 20px; /* Отступ между статьями */ 
+    padding: 15px; /* Внутренний отступ для статей */ 
+    background-color: burlywood; /* Цвет фона для статей */ 
+    border-radius: 5px; /* Скругление углов */ 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Тень для статей */ 
+} 
+ 
+img.das { 
+ height: 150px;
+ width: 2000px;
+} 
+
+img.ii {
+    height: 183px;
+    width: 250px;
+}
+ 
+h3 { 
+    margin-top: 0; /* Убираем верхний отступ у заголовков статей */ 
+} 
+
+@media (max-width: 768px) { 
+    .container { 
+        flex-direction: column; /* На узких экранах колонки становятся вертикальными */ 
+    } 
+     
+    .column { 
+        margin: 10px 0; /* Отступы для вертикального расположения */ 
+    } 
+}
+
+ul li {
+    font-weight: bold;  
+}
+
+p {
+    font-weight: bold;  
+}
